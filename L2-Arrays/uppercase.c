@@ -4,7 +4,7 @@
 int main(void){
     char s[30] = "";
     printf("Before: ");
-    scanf("%s", &s);
+    scanf("%[^\n]s", &s);
 
     for(int i = 0, n = strlen(s); i<n; i++){
         //check for lowercase
